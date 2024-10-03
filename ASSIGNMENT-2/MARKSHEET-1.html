@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marksheet</title>
+
+    <!-- Bootstrap Start -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap End -->
+
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            color: #48afc9;
+        }
+
+        .card {
+            background: #2e4057;
+            border-radius: 20px;
+            border: 2px solid #f39c12;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+            color: #ecf0f1;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            color: #f39c12;
+            text-shadow: 2px 2px 4px rgba(243, 156, 18, 0.4);
+            margin-bottom: 20px;
+        }
+
+        .student-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 3px solid #f39c12;
+            margin-bottom: 15px;
+            box-shadow: 0px 0px 10px rgba(243, 156, 18, 0.5);
+            transition: transform 0.3s;
+        }
+        .student-img:hover {
+            transform: scale(1.1);
+        }
+
+        .btn-custom {
+            background-color: #f39c12;
+            color: white;
+            border-radius: 30px;
+            padding: 10px 20px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0px 5px 15px rgba(243, 156, 18, 0.3);
+        }
+        .btn-custom:hover {
+            background-color: #e67e22;
+            box-shadow: 0px 5px 15px rgba(230, 126, 34, 0.5);
+        }
+
+        .text-center h4:hover {
+            color: #f39c12; 
+            text-shadow: 1px 1px 5px rgba(243, 156, 18, 0.5);
+            cursor: pointer; 
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: #f39c12; 
+            color: #2e4057; 
+            font-weight: bold; 
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .table th {
+            background-color: #f39c12;
+            color: #2e4057;
+            font-weight: 700; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Container Start -->
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+
+                <!-- Card Start -->
+                <div class="card p-4">
+                    <div class="text-center">
+                        <h2>Student Marksheet</h2>
+                        <img src="https://aliakbar-folio.netlify.app/profile_image.jpg" alt="Student Picture" class="student-img">
+                    </div>
+                    
+                    <!-- Student Info -->
+                    <div class="text-center mb-4">
+                        <h4>Name: ALI AKBAR</h4>
+                        <h4>Class: XI</h4>
+                        <h4>Roll No: 01</h4>
+                    </div>
+
+                    <!-- Table Start -->
+                    <table class="table table-bordered table-hover text-center">
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Marks Obtained</th>
+                                <th>Total Marks</th>
+                                <th>Grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mathematics</td>
+                                <td>95</td>
+                                <td>100</td>
+                                <td>A-1</td>
+                            </tr>
+                            <tr>
+                                <td>Physics</td>
+                                <td>88</td>
+                                <td>100</td>
+                                <td>A-1</td>
+                            </tr>
+                            <tr>
+                                <td>Chemistry</td>
+                                <td>90</td>
+                                <td>100</td>
+                                <td>A-1</td>
+                            </tr>
+                            <tr>
+                                <td>Biology</td>
+                                <td>92</td>
+                                <td>100</td>
+                                <td>A-1</td>
+                            </tr>
+                            <tr>
+                                <td>English</td>
+                                <td>85</td>
+                                <td>100</td>
+                                <td>A-1</td>
+                            </tr>
+                            <tr>
+                                <td>Urdu</td>
+                                <td>80</td>
+                                <td>100</td>
+                                <td>A-1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- Table End -->
+                    
+                    <div class="text-center mt-4">
+                        <h4>Total Marks: 530/600</h4>
+                        <h4>Percentage: 88.33%</h4>
+                    </div>
+
+                   
+                    <!-- Button -->
+                    <div class="text-center mt-3">
+                        <a href="https://pdflink.to/marksheet-ali-12/" target=”_blank” class="btn btn-custom" role="button">Download
+                            PDF</a>
+                    </div>
+                </div>
+                <!-- Card End -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Container End -->
+
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
